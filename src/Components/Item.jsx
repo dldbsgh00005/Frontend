@@ -14,7 +14,7 @@ const Item = ({ imgSrc, name, position, index }) => {
             onClick={() => {
 
                 console.log("Detail 요청")
-                let url = "http://localhost:8089/SpringBoot2/PlayerDetail.do?name="+name
+                let url = "http://43.201.98.227:8089/SpringBoot2/PlayerDetail.do?name="+name
 
                 axios.get(url) // ,  {name : name} 은 뺐음
                     .then((res) => {
